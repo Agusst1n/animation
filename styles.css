@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+body{
+    background-color: white;
+}
+/*body::-webkit-scrollbar {
+    width: 0px;               
+  }
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body::-webkit-scrollbar-track {
+    background: red;       
+  }
+body::-webkit-scrollbar-thumb {
+   background-color: transparent;
+  }*/
+h1{
+    font-size: 5.2rem;
+}
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    /*background-color: rgb(43, 43, 43);]*/
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__Animacion{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__1 > h2{
+    color: #fff;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    flex-direction: column;
+}
+.image{
+    width: 70%;
+    height: 100vh;
+    background-image: url(https://images2.alphacoders.com/651/651015.jpg);
+}
+
+.section:nth-child(1){
+    /*background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    width: 80%;
+    height: 80vh;
+    overflow: hidden;
+    background-image: url(https://images2.alphacoders.com/651/651015.jpg);
+
+}
+.section:nth-child(2){
+    /*background-color: rgb(33, 33, 33);*/
+    /*background-image: url(https://images2.alphacoders.com/651/651015.jpg);*/
+    background-image: url(./assests/bg-2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center center;
+}
+.this{
+    margin-top: 250px;
+    margin-right: 40px;
+    color: white;
+}
+.front{
+    opacity: 1;
+}
+.section:nth-child(3){
+    /*background-color: rgb(33, 33, 33);]*/
+}
+.section__3_h2{
+    /*-webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;*/
+    
+}
+.section:nth-child(4){
+    /*background-color: rgb(33, 33, 33);*/
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+.section:nth-child(5){
+    /*background-color: rgb(33, 33, 33);*/
+    color: white;
+}
+.final{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4rem;
+    background-color: rgb(73, 73, 73) ;
+}
+
+
+@media(max-width:414px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .final{
+        font-size: 2rem;
+    }
+    .section{
+        font-size: 2rem;
+    }
+}
