@@ -13,7 +13,7 @@ const tl = gsap.timeline(); //creo una linea del tiempo (se ejecuta una animacio
 tl.from('.image', {scale:2.2}) //les digo que a las secciones que se van a mover en estas direcciones]
 tl.to('.image', {scale:0.6})
 
-tl.from('.section__2', {xPercent:-250, scale:200}) //les digo que a las secciones que se van a mover en estas direcciones]
+tl.from('.section__2', { scale:300}) //les digo que a las secciones que se van a mover en estas direcciones]
 tl.to('.section__2', {backgroundColor:'white'})
 
 tl.from('.this', {opacity:0})
@@ -29,7 +29,7 @@ tl.from('.front', {opacity:0})
 
 
 tl.from('.section__4', {yPercent: -100})
-tl.to('.section__4', {color:'rgb(33, 33, 33)'})
+tl.to('.section__4', {color:'transparent'})
 //tl.from('.section__4', {scale:4, opacity:0})
 //tl.to('.section__4', {scale:0.3})
 
@@ -42,7 +42,7 @@ tl.to('.text_2', {xPercent: 300})
 ScrollTrigger.create({
     animation:tl,
     trigger: '.contenedor__Animacion',
-    //markers:true, //muestra las marcas de inicio y fin
+    markers:true, //muestra las marcas de inicio y fin
     start: 'top top',//acomodo las marcas de inicio
     end: '+=5000', //La Animacion termina 4000 px abajo]
     pin: true, //clava en la pantalla el contenedor que contiene todas las animaciones]
